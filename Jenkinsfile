@@ -1,6 +1,6 @@
 pipeline {
     agent{
-        label "principal"
+        label "master"
     }
     tools{maven 'M3'}
     stages{

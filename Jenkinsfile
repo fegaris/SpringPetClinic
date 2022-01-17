@@ -27,7 +27,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh 'java -jar *.jar'
+                sh 'echo "$(pwd)"'
+                sh 'java -jar target/*.jar'
             }
         }
     }
